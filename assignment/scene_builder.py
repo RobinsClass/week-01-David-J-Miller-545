@@ -78,12 +78,7 @@ building = cmds.polyCube(
 cmds.move(building_x, building_height / 2.0, building_z, building)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 2
-# Create a second object using a DIFFERENT primitive type than the cube above.
-# Remember to:
-#   - Use descriptive variable names for size and position.
-#   - Name the object meaningfully with the 'name' parameter or cmds.rename().
-#   - Position it so it sits on the ground (not floating or buried).
+# Just a thick needle
 # ---------------------------------------------------------------------------
 needle_02_height = 5
 needle_02_radius = 2
@@ -98,7 +93,7 @@ needle_02 = cmds.polyCone(
 cmds.move(needle_02_pos_x, needle_02_height / 2.0, needle_02_pos_z, needle_02)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 3
+# Cylinder (why don't we have cylindrical buildings?)
 # ---------------------------------------------------------------------------
 cylinder_03_height = 7
 cylinder_03_radius = 3
@@ -113,7 +108,7 @@ cylinder_03 = cmds.polyCylinder(
 cmds.move(cylinder_03_pos_x, cylinder_03_height / 2.0, cylinder_03_pos_z, cylinder_03)
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 4
+# Sphere (kinda like Epcot)
 # ---------------------------------------------------------------------------
 sphere_04_radius = 6
 sphere_04_pos_x = -12
@@ -126,7 +121,7 @@ sphere_04 = cmds.polySphere(
 cmds.move(sphere_04_pos_x, sphere_04_radius, sphere_04_pos_z, sphere_04) # diameter = 2 * radius
 
 # ---------------------------------------------------------------------------
-# TODO: Add Object 5
+# Space Needle
 # ---------------------------------------------------------------------------
 space_needle_05_height = 200
 space_needle_05_radius = 1.5
@@ -141,8 +136,7 @@ space_needle_05 = cmds.polyCone(
 cmds.move(space_needle_05_pos_x, space_needle_05_height / 2.0, space_needle_05_pos_z, space_needle_05)
 
 # ---------------------------------------------------------------------------
-# TODO (Optional): Add more objects to make your scene more interesting!
-# Consider: trees, lamp posts, fences, vehicles, animals, etc.
+# Olive on a Toothpick
 # ---------------------------------------------------------------------------
 tooth_pick_06_height = 5
 tooth_pick_06_radius = .15
