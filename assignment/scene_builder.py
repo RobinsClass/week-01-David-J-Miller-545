@@ -85,12 +85,21 @@ cmds.move(building_x, building_height / 2.0, building_z, building)
 #   - Name the object meaningfully with the 'name' parameter or cmds.rename().
 #   - Position it so it sits on the ground (not floating or buried).
 # ---------------------------------------------------------------------------
+needle_02_height = 5
+needle_02_radius = 2
+needle_02_pos_x = 3
+needle_02_pos_z = 2
 
+needle_02 = cmds.polyCube(
+    name="needle_02",
+    height=needle_02_height,
+    radius=needle_02_radius,
+)[0]
+cmds.move(needle_02_pos_x, needle_02_height / 2.0, needle_02_pos_z, needle_02)
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
 # ---------------------------------------------------------------------------
-
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 4
