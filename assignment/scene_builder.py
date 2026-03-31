@@ -128,7 +128,17 @@ cmds.move(sphere_04_pos_x, sphere_04_radius, sphere_04_pos_z, sphere_04) # diame
 # ---------------------------------------------------------------------------
 # TODO: Add Object 5
 # ---------------------------------------------------------------------------
+space_needle_05_height = 200
+space_needle_05_radius = 1.5
+space_needle_05_pos_x = 0
+space_needle_05_pos_z = -7
 
+space_needle_05 = cmds.polyCone(
+    name="space_needle_05",
+    height=space_needle_05_height,
+    radius=space_needle_05_radius
+)[0]
+cmds.move(space_needle_05_pos_x, space_needle_05_height / 2.0, space_needle_05_pos_z, space_needle_05)
 
 # ---------------------------------------------------------------------------
 # TODO (Optional): Add more objects to make your scene more interesting!
