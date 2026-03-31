@@ -90,21 +90,40 @@ needle_02_radius = 2
 needle_02_pos_x = 3
 needle_02_pos_z = 2
 
-needle_02 = cmds.polyCube(
+needle_02 = cmds.polyCone(
     name="needle_02",
     height=needle_02_height,
-    radius=needle_02_radius,
+    radius=needle_02_radius
 )[0]
 cmds.move(needle_02_pos_x, needle_02_height / 2.0, needle_02_pos_z, needle_02)
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 3
 # ---------------------------------------------------------------------------
+cylinder_03_height = 7
+cylinder_03_radius = 3
+cylinder_03_pos_x = -2
+cylinder_03_pos_z = 7
+
+cylinder_03 = cmds.polyCylinder(
+    name="cylinder_03",
+    height=cylinder_03_height,
+    radius=cylinder_03_radius
+)[0]
+cmds.move(cylinder_03_pos_x, cylinder_03_height / 2.0, cylinder_03_pos_z, cylinder_03)
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 4
 # ---------------------------------------------------------------------------
+sphere_04_radius = 6
+sphere_04_pos_x = -12
+sphere_04_pos_z = -3
 
+sphere_04 = cmds.polySphere(
+    name="sphere_04",
+    radius=sphere_04_radius
+)[0]
+cmds.move(sphere_04_pos_x, sphere_04_radius, sphere_04_pos_z, sphere_04) # diameter = 2 * radius
 
 # ---------------------------------------------------------------------------
 # TODO: Add Object 5
