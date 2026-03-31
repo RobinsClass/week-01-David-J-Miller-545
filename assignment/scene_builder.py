@@ -144,6 +144,26 @@ cmds.move(space_needle_05_pos_x, space_needle_05_height / 2.0, space_needle_05_p
 # TODO (Optional): Add more objects to make your scene more interesting!
 # Consider: trees, lamp posts, fences, vehicles, animals, etc.
 # ---------------------------------------------------------------------------
+tooth_pick_06_height = 5
+tooth_pick_06_radius = .15
+tooth_pick_06_pos_x = -1
+tooth_pick_06_pos_z = 3
+
+tooth_pick_06 = cmds.polyCone(
+    name="tooth_pick_06",
+    height=tooth_pick_06_height,
+    radius=tooth_pick_06_radius
+)[0]
+cmds.move(tooth_pick_06_pos_x, tooth_pick_06_height / 2.0, tooth_pick_06_pos_z, tooth_pick_06)
+
+olive_06_radius = .5
+olive_06 = cmds.polySphere(
+    name="olive_06",
+    radius=olive_06_radius
+)[0]
+
+olive_06_rest_height = tooth_pick_06_height - olive_06_radius * .15 # full height of tooth pick but a little more than halfway on (slightly lower)
+cmds.move(tooth_pick_06_pos_x, olive_06_rest_height, tooth_pick_06_pos_z, olive_06)
 
 
 # ---------------------------------------------------------------------------
